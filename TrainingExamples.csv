@@ -1,0 +1,6 @@
+Distance to Closest Enemy,Distance to big bad enemy,Flanking Status,Ability to flank,Closest Enemy Size,Big bad enemy size,can reach BB without AoO,Current Health,Enemy hit rate,Max damage taken in one hit,Number of enemies,Target,Action1,Action2,Action3
+6,6,F,T,Medium,Medium,Yes,10,0.1,7,1,Closest,Flank,Charge,Advance
+0,5,T,T,Large,Medium,No,3,0.3,4,3,Closest,Fight Defensively,Attack,Attack AND Retreat
+5,0,F,F,Medium,Huge,Yes,9,0.5,4,2,BB,Attack,Fight Defensively,Defend
+9,9,F,F,Medium,Medium,Yes,14,-1,-1,2,Closest,Advance,Ranged Attack,Defend
+13,13,F,F,Tiny,Tiny,Yes,14,-1,-1,5,Closest,Ranged Attack,Advance,Defend
