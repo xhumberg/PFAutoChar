@@ -1,38 +1,38 @@
 Number of Enemies,Distance to Closest Enemy,Distance to Big Bad Enemy,Flanking Status,Ability to Flank,Closest Enemy Size,Big Bad Enemy Size,Can Reach Big Bad Without Being Attacked,Current Health,Enemy Hit Rate,Character Hit Rate,Max Damage Taken in 1 hit,target,Action 1,Result,Action 2,Result,Action 3,Result
-3,0,0,-1,1,1,1,1,12,1,1,0,,Flank,1,Full Attack,1,Fight Defensively,-1
-1,1,1,-1,1,2,2,1,9,0.25,0.9,4,,Flank,1,Full Attack,1,Fight Defensively,1
-1; 2-3; 4+,"4-; 5-8; 9-12,; 13+",4-; 5-8; 9-12; 13+,,,-2-; -1-0; 1; 2+,-2-; -2-0; 1; 2+,,1-3; 4-6; 7-9; 10-12,0-0.24; 0.25-0.49; 0.5-0.74; 0.75-0.99; 1,0-0.24; 0.25-0.49; 0.5-0.74; 0.75-0.99; 1,1-3; 4-6; 7-9; 10-12; 13+,closest = 1; big bad = -1,,,,,,
-3,0,0,1,1,1,2,1,2,0.18,0.57,3,,Heal,-1,Flank,1,Fight Defensively,1
-2,6,11,-1,1,-1,-1,1,11,1,0.64,17,,,,,,,
-5,14,14,-1,1,2,2,-1,12,0.65,0.28,14,,Advance,1,Ranged and Advance,1,Ranged,-1
-5,1,3,-1,1,-1,-2,1,9,0.2,0.35,12,,Fight Defensively,1,,,,
-1,12,12,-1,1,4,4,-1,4,0.34,0.42,8,,,,,,,
-3,7,7,-1,1,4,4,-1,6,0.15,1,0,,,,,,,
-4,1,1,1,1,2,2,1,4,1,0.29,2,,,,,,,
-1,1,3,1,-1,-1,-1,1,4,0.98,0.87,17,,,,,,,
-4,9,9,1,-1,4,4,-1,2,1,0.61,3,,,,,,,
-2,6,6,1,1,-2,-2,1,1,0.03,0.77,3,,,,,,,
-1,4,4,-1,1,-2,-2,1,10,1,0.61,3,,,,,,,
-3,11,11,1,1,-1,-1,1,8,0.23,0.41,20,,,,,,,
-1,1,1,-1,1,1,1,1,12,0.14,0.22,5,,,,,,,
-3,4,4,1,1,1,1,1,8,0.62,0.15,18,,,,,,,
-4,13,13,-1,1,2,2,-1,4,0.56,0.64,15,,,,,,,
-5,12,0,1,1,-2,-2,1,2,0.61,0.45,19,,,,,,,
-4,12,7,1,-1,2,-2,1,6,0.27,1,10,,,,,,,
-3,6,13,-1,-1,4,4,-1,10,0.22,1,9,,,,,,,
-1,2,2,-1,-1,1,1,1,7,0.73,0.5,16,,,,,,,
-2,3,0,-1,1,4,4,1,12,1,0.65,20,,,,,,,
-4,12,12,1,1,-1,-1,1,6,0.39,0.26,10,,,,,,,
-5,1,1,-1,-1,-2,-2,1,8,0.45,0.04,13,,,,,,,
-5,10,10,-1,1,2,2,-1,2,0.37,1,18,,,,,,,
-5,2,2,-1,1,-2,-2,1,6,0.01,0.96,6,,,,,,,
-2,6,6,1,1,2,2,-1,4,0.17,0.09,19,,,,,,,
-1,2,2,-1,1,4,4,-1,2,0.45,0.01,7,,,,,,,
-1,12,5,-1,1,0,0,1,9,0.02,0.82,0,,,,,,,
-2,8,8,-1,1,-1,-1,1,4,0.56,0.08,20,,,,,,,
-5,6,6,-1,-1,-2,-2,1,7,0.19,0.24,4,,,,,,,
-3,0,10,1,1,1,1,1,6,1,0.61,16,,,,,,,
-5,9,9,-1,1,2,2,-1,7,0.56,0.02,1,,,,,,,
-1,8,8,-1,-1,-1,-1,1,11,0.14,0.53,6,,,,,,,
-4,14,14,1,1,4,4,-1,4,1,0.12,16,,,,,,,
-5,12,12,1,-1,-1,4,-1,10,1,0.68,12,,,,,,,
+3,0,0,-1,1,1,1,1,12,1,1,0,,Full Attack,1,Flank,1,Fight Defensively,-1
+1,1,1,-1,1,2,2,1,9,0.25,0.9,4,,Full Attack,1,Flank,1,Fight Defensively,1
+1; 2-3; 4+,"4-; 5-8; 9-12,; 13+",4-; 5-8; 9-12; 13+,true = 1; false = -1,true = 1; false = -1,-2-; -1-0; 1; 2+,-2-; -2-0; 1; 2+,true = 1; false = -1,1-3; 4-6; 7-9; 10-12,0-0.24; 0.25-0.49; 0.5-0.74; 0.75-0.99; 1,0-0.24; 0.25-0.49; 0.5-0.74; 0.75-0.99; 1,1-3; 4-6; 7-9; 10-12; 13+,closest = 1; big bad = -1,,,,,,
+3,0,0,1,1,1,2,1,2,0.18,0.57,3,-1,Full Attack,-1,Fight Defensively,1,Heal,-1
+2,6,11,-1,1,-1,-1,1,11,1,0.64,17,1,Charge,1,Ranged,-1,Flank,1
+5,14,14,-1,1,2,2,-1,12,0.65,0.28,14,-1,Ranged and Advance,1,Advance,1,Ranged,-1
+5,1,3,-1,1,-1,-2,1,9,0.2,0.35,12,1,Fight Defensively,1,Attack and Step Away,-1,Defend,-1
+1,12,12,-1,1,4,4,-1,4,0.34,0.42,8,-1,Ranged and Advance,1,Advance,-1,Ranged,-1
+3,7,7,-1,1,4,4,-1,6,0.15,1,0,-1,Charge,1,Ranged and Advance,-1,Advance,1
+4,1,1,1,1,2,2,1,4,1,0.29,2,-1,full Attack,-1,Fight Defensively,1,Attack and Step Away,1
+1,1,1,1,-1,-1,-1,1,4,0.98,0.87,17,-1,Fight Defensively,1,Defend,-1,Retreat and Heal,1
+4,9,9,1,-1,4,4,-1,2,1,0.61,3,-1,Ranged and Advance,-1,Heal and Advance,1,Heal,1
+2,6,6,1,1,-2,-2,1,1,0.03,0.77,3,-1,Charge,1,Heal and Advance,1,Heal,-1
+1,4,4,-1,1,-2,-2,1,10,1,0.61,3,-1,Advance and Attack,1,Ranged,-1,Flank,1
+3,11,11,1,1,-1,-1,1,8,0.23,0.41,20,-1,Ranged and Advance,1,Ranged,-1,Heal and Advance,-1
+1,1,1,-1,1,1,1,1,12,0.14,0.22,5,-1,Full Attack,1,Flank,1,Fight Defensively,1
+3,4,4,1,1,1,1,1,8,0.62,0.15,18,-1,Advance and Attack,1,Defend,-1,Step Away and Heal,1
+4,13,13,-1,1,2,2,-1,4,0.56,0.64,15,-1,Ranged and Advance,1,Advance,-1,Heal and Advance,1
+5,12,0,1,1,-2,-2,1,2,0.61,0.45,19,-1,Full Attack,-1,Fight Defensively,1,Retreat and Heal,1
+4,12,7,1,-1,2,-2,1,6,0.27,1,10,-1,Charge,1,Ranged and Advance,-1,Heal and Advance,-1
+3,6,13,-1,-1,4,4,-1,10,0.22,1,9,1,Charge,1,Ranged and Advance,-1,Advance,-1
+1,2,2,-1,-1,1,1,1,7,0.73,0.5,16,-1,Advance and Attack,1,Heal and Advance,-1,Defend,1
+2,3,0,-1,1,4,4,1,12,1,0.65,20,-1,Fight Defensively,1,Flank,1,Retreat,1
+4,12,12,1,1,-1,-1,1,6,0.39,0.26,10,-1,Ranged and Advance,1,Ranged,-1,Heal and Advance,1
+5,1,1,-1,-1,-2,-2,1,8,0.45,0.04,13,-1,Fight Defensively,1,Defend,1,Step Away and Heal,-1
+5,10,10,-1,1,2,2,-1,2,0.37,1,18,-1,Ranged and Advance,1,Ranged,1,Heal,1
+5,2,2,-1,1,-2,-2,1,6,0.01,0.96,6,-1,Advance and Attack,1,Flank,1,Defend,-1
+2,6,6,1,1,2,2,-1,4,0.17,0.09,19,-1,Charge,1,Ranged and Advance,-1,Defend,1
+1,2,2,-1,1,4,4,-1,2,0.45,0.01,7,-1,Advance and Attack,-1,Defend,1,Step Away and Heal,1
+1,12,5,-1,1,0,0,1,9,0.02,0.82,0,-1,Charge,1,Ranged and Advance,-1,Advance,-1
+2,8,8,-1,1,-1,-1,1,4,0.56,0.08,20,-1,Charge,-1,Flank,1,Step Away and Heal,1
+5,6,6,-1,-1,-2,-2,1,7,0.19,0.24,4,-1,Charge,1,Ranged and Advance,-1,Defend,-1
+3,0,10,1,1,1,1,1,6,1,0.61,16,1,Full Attack,1,Defend,1,Step Away and Heal,1
+5,9,9,-1,1,2,2,-1,7,0.56,0.02,1,-1,Ranged and Advance,1,Flank,1,Advance,-1
+1,8,8,-1,-1,-1,-1,1,11,0.14,0.53,6,-1,Charge,1,Ranged and Advance,-1,Advance,-1
+4,14,14,1,1,4,4,-1,4,1,0.12,16,-1,Ranged and Advance,1,Advance,-1,Heal and Advance,1
+5,12,12,1,-1,-1,4,-1,10,1,0.68,12,-1,Ranged and Advance,1,Ranged,-1,advance,-1
