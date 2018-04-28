@@ -56,9 +56,14 @@ passiveTree = DecisionTree(values, 3)
 
 ##code testing
 
-#prediction1 = aggressiveTree.predict([[3, 0, 0, -1, 1, 1, 1, 1, 12, 1, 1, 0]])
+#prediction1 = aggressiveTree.predict([[5, 11, 11, -1, 1, 4, 4, -1, 6, 1, 0.68, 19]])
 #print(prediction1)
-#prediction2 = middleTree.predict([[3, 0, 0, -1, 1, 1, 1, 1, 12, 1, 1, 0]])
+#prediction2 = middleTree.predict([[5, 11, 11, -1, 1, 4, 4, -1, 6, 1, 0.68, 19]])
 #print(prediction2)
-#prediction3 = passiveTree.predict([[3, 0, 0, -1, 1, 1, 1, 1, 12, 1, 1, 0]])
+#prediction3 = passiveTree.predict([[5, 11, 11, -1, 1, 4, 4, -1, 6, 1, 0.68, 19]])
 #print(prediction3)
+
+#testvals = loadInputs("test.csv")
+#print(aggressiveTree.predict(testvals))
+#print(middleTree.predict(testvals))
+#print(passiveTree.predict(testvals))
