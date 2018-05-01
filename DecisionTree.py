@@ -77,6 +77,7 @@ def GenPerceptronLayer(vals):
 			print string + ": " + str(nets[string].score(trainingData[string], trainingValues[string])*100) + "% testing accuracy"
 	return nets;
 
+##Predicts which action to do based on the three trees, the perceptron nets, and the given testArray.
 def perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, testArray):
 	prediction1 = str(aggressiveTree.predict(testArray)[0]);
 	prediction2 = str(middleTree.predict(testArray)[0]);
