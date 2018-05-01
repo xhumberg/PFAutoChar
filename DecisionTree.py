@@ -28,8 +28,8 @@ def DecisionTree(vals, treeNum):
     #print(vals[2][13])
 
     retval = tree.DecisionTreeClassifier()
-    parameters = [[0 for i in range(12)] for j in range(36)]
-    labels = [0 for i in range(36)]
+    parameters = [[0 for i in range(12)] for j in range(37)]
+    labels = [0 for i in range(37)]
 
     num = 0
     if treeNum == 1:
@@ -39,7 +39,7 @@ def DecisionTree(vals, treeNum):
     if treeNum == 3:
         num = 17
 
-    for i in range(0, 36):
+    for i in range(0, 37):
         indx = i+1
         #print(indx)
         #print(num)
@@ -53,7 +53,7 @@ def GenPerceptronLayer(vals):
 	nets = {}
 	trainingData = {}
 	trainingValues = {}
-	for i in range (0, 36):
+	for i in range (0, 37):
 		indx = i+1
 		data = [0]*12;
 		for j in range(0, 11):
@@ -95,6 +95,23 @@ def perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, test
 		result = prediction2
 	return result
 
+def test(aggressiveTree, middleTree, passiveTree, perceptrons):
+	testCases = loadInputs("test.csv")
+	values = [];
+	labels = [];
+	i = 0;
+	for row in testCases:
+		values.append([0]*12)
+		for j in range(0, 11):
+			values[i][j] = row[j];
+		i+=1
+	for row in testCases:
+		labels.append(row[12]);
+
+	print str(values[0]) + " = " + str(labels[0])
+
+	
+
 ##change current working directory, needed for my computer
 #os.chdir(r'F:\school\Nate\cs5350\project\PFAutoChar')
 values = loadInputs("percepTrain.csv")
@@ -107,6 +124,8 @@ passiveTree = DecisionTree(values, 3)
 perceptrons = GenPerceptronLayer(values);
 
 result = perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, [[3,0,0,1,1,1,2,1,2,0.18,0.57,3]]);
+
+test(aggressiveTree, middleTree, passiveTree, perceptrons);
 
 print "You should " + result
 
