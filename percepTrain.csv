@@ -13,14 +13,14 @@ Number of Enemies: 1; 2-3; 4+,"Distance to Closest Enemy: 4-; 5-8; 9-12,; 13+",D
 2,6,6,1,1,-2,-2,1,1,0.03,0.77,3,-1,Charge,1,Heal and Advance,1,Heal,-1
 1,4,4,-1,1,-2,-2,1,10,1,0.61,3,-1,Advance and Attack,1,Ranged,-1,Flank,1
 3,11,11,1,1,-1,-1,1,8,0.23,0.41,20,-1,Ranged and Advance,1,Ranged,-1,Heal and Advance,-1
-1,1,1,-1,1,1,1,1,12,0.14,0.22,5,-1,Full Attack,1,Flank,1,Fight Defensively,1
+1,1,1,-1,1,1,1,1,12,0.14,0.22,5,-1,Full Attack,1,Flank,-1,Fight Defensively,1
 3,4,4,1,1,1,1,1,8,0.62,0.15,18,-1,Advance and Attack,1,Defend,-1,Step Away and Heal,1
 4,13,13,-1,1,2,2,-1,4,0.56,0.64,15,-1,Ranged and Advance,1,Advance,-1,Heal and Advance,1
-5,12,0,1,1,-2,-2,1,2,0.61,0.45,19,-1,Full Attack,-1,Fight Defensively,1,Retreat and Heal,1
+5,12,0,1,1,-2,-2,1,2,0.61,0.45,19,-1,Full Attack,-1,Fight Defensively,1,Retreat and Heal,-1
 4,12,7,1,-1,2,-2,1,6,0.27,1,10,-1,Charge,1,Ranged and Advance,-1,Heal and Advance,-1
 3,6,13,-1,-1,4,4,-1,10,0.22,1,9,1,Charge,1,Ranged and Advance,-1,Advance,-1
 1,2,2,-1,-1,1,1,1,7,0.73,0.5,16,-1,Advance and Attack,1,Heal and Advance,-1,Defend,1
-2,3,0,-1,1,4,4,1,12,1,0.65,20,-1,Fight Defensively,1,Flank,1,Retreat,1
+2,3,0,-1,1,4,4,1,12,1,0.65,20,-1,Fight Defensively,1,Flank,-1,Retreat,1
 4,12,12,1,1,-1,-1,1,6,0.39,0.26,10,-1,Ranged and Advance,1,Ranged,-1,Heal and Advance,1
 5,1,1,-1,-1,-2,-2,1,8,0.45,0.04,13,-1,Fight Defensively,1,Defend,1,Step Away and Heal,-1
 5,10,10,-1,1,2,2,-1,2,0.37,1,18,-1,Ranged and Advance,1,Ranged,1,Heal,1
@@ -28,10 +28,11 @@ Number of Enemies: 1; 2-3; 4+,"Distance to Closest Enemy: 4-; 5-8; 9-12,; 13+",D
 2,6,6,1,1,2,2,-1,4,0.17,0.09,19,-1,Charge,1,Ranged and Advance,-1,Defend,1
 1,2,2,-1,1,4,4,-1,2,0.45,0.01,7,-1,Advance and Attack,-1,Defend,1,Step Away and Heal,1
 1,12,5,-1,1,0,0,1,9,0.02,0.82,0,-1,Charge,1,Ranged and Advance,-1,Advance,-1
-2,8,8,-1,1,-1,-1,1,4,0.56,0.08,20,-1,Charge,-1,Flank,1,Step Away and Heal,1
+2,8,8,-1,1,-1,-1,1,4,0.56,0.08,20,-1,Charge,-1,Flank,-1,Step Away and Heal,1
 5,6,6,-1,-1,-2,-2,1,7,0.19,0.24,4,-1,Charge,1,Ranged and Advance,-1,Defend,-1
 3,0,10,1,1,1,1,1,6,1,0.61,16,1,Full Attack,1,Defend,1,Step Away and Heal,1
 5,9,9,-1,1,2,2,-1,7,0.56,0.02,1,-1,Ranged and Advance,1,Flank,1,Advance,-1
 1,8,8,-1,-1,-1,-1,1,11,0.14,0.53,6,-1,Charge,1,Ranged and Advance,-1,Advance,-1
 4,14,14,1,1,4,4,-1,4,1,0.12,16,-1,Ranged and Advance,1,Advance,-1,Heal and Advance,1
 5,12,12,1,-1,-1,4,-1,10,1,0.68,12,-1,Ranged and Advance,1,Ranged,-1,Advance,-1
+1,0,0,-1,1,4,4,1,5,0.75,0.5,10,-1,Full Attack,-1,Fight Defensively,1,Retreat,-1
