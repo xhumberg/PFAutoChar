@@ -77,6 +77,23 @@ def GenPerceptronLayer(vals):
 			print string + ": " + str(nets[string].score(trainingData[string], trainingValues[string])*100) + "% testing accuracy"
 	return nets;
 
+def perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, testArray):
+	prediction1 = str(aggressiveTree.predict(testArray)[0]);
+	prediction2 = str(middleTree.predict(testArray)[0]);
+	prediction3 = str(passiveTree.predict(testArray)[0]);
+	net = perceptrons[prediction1]
+	if debug is True:
+		print "Aggressively predicted: " + prediction1 + ". Perceptron says : " + str(perceptrons[prediction1].predict(testArray)[0]);
+		print "Progressively predicted: " + prediction2 + ". Perceptron says : " + str(perceptrons[prediction2].predict(testArray)[0]);
+		print "Defensively predicted: " + prediction3 + ". Perceptron says : " + str(perceptrons[prediction3].predict(testArray)[0]);
+
+	result = prediction3
+	if str(perceptrons[prediction1].predict(testArray)[0]) is "1":
+		result = prediction1
+	elif str(perceptrons[prediction2].predict(testArray)[0]) is "1":
+		result = prediction2
+	return result
+
 ##change current working directory, needed for my computer
 #os.chdir(r'F:\school\Nate\cs5350\project\PFAutoChar')
 values = loadInputs("percepTrain.csv")
@@ -85,23 +102,10 @@ aggressiveTree = DecisionTree(values, 1)
 middleTree = DecisionTree(values, 2)
 passiveTree = DecisionTree(values, 3)
 
+#Create the perceptron nets
 perceptrons = GenPerceptronLayer(values);
 
-testArray = [[3,0,0,1,1,1,2,1,2,0.18,0.57,3]]
-prediction1 = str(aggressiveTree.predict(testArray)[0]);
-prediction2 = str(middleTree.predict(testArray)[0]);
-prediction3 = str(passiveTree.predict(testArray)[0]);
-net = perceptrons[prediction1]
-if debug is True:
-	print "Aggressively predicted: " + prediction1 + ". Perceptron says : " + str(perceptrons[prediction1].predict(testArray)[0]);
-	print "Progressively predicted: " + prediction2 + ". Perceptron says : " + str(perceptrons[prediction2].predict(testArray)[0]);
-	print "Defensively predicted: " + prediction3 + ". Perceptron says : " + str(perceptrons[prediction3].predict(testArray)[0]);
-
-result = prediction3
-if str(perceptrons[prediction1].predict(testArray)[0]) is "1":
-	result = prediction1
-elif str(perceptrons[prediction2].predict(testArray)[0]) is "1":
-	result = prediction2
+result = perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, [[3,0,0,1,1,1,2,1,2,0.18,0.57,3]]);
 
 print "You should " + result
 
