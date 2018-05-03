@@ -102,13 +102,19 @@ def test(aggressiveTree, middleTree, passiveTree, perceptrons):
 	i = 0;
 	for row in testCases:
 		values.append([0]*12)
-		for j in range(0, 11):
-			values[i][j] = row[j];
+		for j in range(0, 12):
+			values[i][j] = float(row[j]);
 		i+=1
-	for row in testCases:
 		labels.append(row[12]);
-
-	print str(values[0]) + " = " + str(labels[0])
+	i=0
+	correct=0;
+	for row in testCases:
+		result = perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, [values[i]])
+		#print "predicted '" + str(result) + "'! Should have gotten " + str(labels[i])
+		if str(result)==str(labels[i]):
+			correct+=1
+		i+=1
+	print str(float(correct)/float(i)*100) + "% correct!";
 
 	
 
@@ -123,11 +129,7 @@ passiveTree = DecisionTree(values, 3)
 #Create the perceptron nets
 perceptrons = GenPerceptronLayer(values);
 
-result = perceptronPredict(aggressiveTree, middleTree, passiveTree, perceptrons, [[3,0,0,1,1,1,2,1,2,0.18,0.57,3]]);
-
 test(aggressiveTree, middleTree, passiveTree, perceptrons);
-
-print "You should " + result
 
 ##code testing
 
